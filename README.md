@@ -6,7 +6,7 @@ Entry task for Endevel
 
 # Prerequirements
 
-# to run with docker - at your own risk, might not work
+# to run with Docker
 
 requirements.txt in /endevel_entry/ directory with the following content:<br>
 `django==4.0`<br/>
