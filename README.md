@@ -4,6 +4,10 @@ API containing articles and tags
  - with an option to show articles per tag
 Entry task for Endevel
 
+[How to run with Docker](#to run with Docker)
+[How to run with pipenv](#to run with pipenv)
+[How to run get Data](#Getting the data from the API)
+
 
 # to run with Docker
 
@@ -42,7 +46,7 @@ To run the server: <br>
 `cd endevel_entry`<br/>
 `python3 manage.py runserver`<br/>
 
-## Getting the data from the API
+# Getting the data from the API
 
 
 
