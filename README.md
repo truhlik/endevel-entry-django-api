@@ -32,19 +32,19 @@ To run the server: <br>
 To get all Articles <br>
 a GET request with the following format authenticated as `admin:admin` <br>
 `http://127.0.0.1:8000/articles/?format=json` <br>
-or with httpie: `http -a admin:admin GET http://127.0.0.1:8000/articles/?format=json`
+or with httpie: <p>`http -a admin:admin GET http://127.0.0.1:8000/articles/?format=json`</p>
 
 
 To get all Tags <br>
 a GET request with the following format authenticated as `admin:admin`<br>
 `http://127.0.0.1:8000/tags/?format=json` <br>
-or with httpie: `http -a admin:admin GET http://127.0.0.1:8000/tags/?format=json`
+or with httpie: <p>`http -a admin:admin GET http://127.0.0.1:8000/tags/?format=json`</p>
 
 
 To get all Articles for a given Tag <br>
 a GET request with the following format authenticated as `admin:admin`<br>
 `http://127.0.0.1:8000/articles/Name?format=json` <br>
-or with httpie: `http -a admin:admin GET http://127.0.0.1:8000/articles/Beta?format=json`
+or with httpie: <p>`http -a admin:admin GET http://127.0.0.1:8000/articles/Beta?format=json`</p>
 
 
 
