@@ -7,9 +7,9 @@ Entry task for Endevel
 
 # to run with Docker
 
-1. Copy endevel_entry/settings.env.dist into endevel_entry/settings.env
+1. Copy `endevel_entry/settings.env.dist` into `endevel_entry/settings.env`
 
-2. requirements.txt in /endevel_entry/ directory with the following content:<br>
+2. requirements.txt in `endevel_entry/` directory with the following content:<br> should already be there <3
 `django==4.0`<br/>
 `psycopg2-binary==2.9.3`<br/>
 `django-cors-headers==3.8.0`<br/>
