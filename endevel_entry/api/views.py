@@ -1,13 +1,13 @@
-from django.shortcuts import render
 from .models import Article, Tag
 from rest_framework import viewsets, permissions, generics
 from .serializers import ArticleSerializer, TagSerializer
-from rest_framework.decorators import api_view
-from django.http import JsonResponse
+from django.conf import settings
+import os
+import environ
 
 
 def _get_articles_by_name(name):
-    result = list(Article.objects.filter(tags__name=name))
+    result = Article.objects.filter(tags__name=name)
     return result
 
 
@@ -31,13 +31,12 @@ class TagViewSet(viewsets.ModelViewSet):
 
 class ArticleByTagList(generics.ListAPIView):
     serializer_class = ArticleSerializer
+    permission_classes = [permissions.IsAuthenticated]
 
     def get_queryset(self):
         """
-        This view should return a list of all the purchases for
-        the user as determined by the name portion of the URL.
+        This view should return a list of all the articles for given tag name.
         """
         tag_name = self.kwargs["name"]
-        print(tag_name)
         result = _get_articles_by_name(tag_name)
         return result

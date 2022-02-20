@@ -30,7 +30,7 @@ class Article(models.Model):
     content_en = models.TextField(
         _("Content EN"), null=True, blank=True, default=None)
     content_cz = models.TextField(
-        _("Content EN"), null=True, blank=True, default=None)
+        _("Content CZ"), null=True, blank=True, default=None)
     header_image = models.ImageField(
         _("Header Image"), upload_to='uploads/', blank=True, null=True, default=None)
     header_thumb = models.CharField(_("Header Thumbnail"), max_length=100,
