@@ -1,6 +1,7 @@
 from django.db import models
 from django.utils.translation import gettext as _
 from django.utils import timezone
+from django.template.defaultfilters import truncatechars  # or truncatewords
 
 
 # Create your models here.
@@ -48,3 +49,10 @@ class Article(models.Model):
 
     def __str__(self):
         return self.title_en
+    @property
+    def short_content_en(self):
+        return truncatechars(self.content_en, 30)
+
+    @property
+    def short_content_cz(self):
+        return truncatechars(self.content_cz, 30)
