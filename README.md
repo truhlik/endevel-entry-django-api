@@ -11,12 +11,12 @@ Install Pipenv package: <br>
 `pip install pipenv`<br/>
 
 requirements.txt in root of the directory with the following content:<br>
-`django==4.0`
-`psycopg2-binary==2.9.3`
-`django-cors-headers==3.8.0`
-`django-environ==0.8.1`
-`djangorestframework==3.13.1`
-`Pillow==9.0.1`
+`django==4.0`<br/>
+`psycopg2-binary==2.9.3`<br/>
+`django-cors-headers==3.8.0`<br/>
+`django-environ==0.8.1`<br/>
+`djangorestframework==3.13.1`<br/>
+`Pillow==9.0.1`<br/>
 
 To run the server: <br>
 `#stay in root`<br/>
