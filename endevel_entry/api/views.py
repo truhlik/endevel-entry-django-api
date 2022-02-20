@@ -7,7 +7,7 @@ from django.http import JsonResponse
 
 
 def _get_articles_by_name(name):
-    result = Article.objects.filter(tags__name=name)
+    result = list(Article.objects.filter(tags__name=name))
     return result
 
 
@@ -41,11 +41,3 @@ class ArticleByTagList(generics.ListAPIView):
         print(tag_name)
         result = _get_articles_by_name(tag_name)
         return result
-
-
-@api_view(['GET', 'POST'])
-def articles_by_tag_name(request, name):
-    if request.method == 'GET':
-        print(name)
-        return JsonResponse({"message": "Got some data!", "data": request.data})
-    return JsonResponse({"message": "Hello, world!"}, safe=False)
