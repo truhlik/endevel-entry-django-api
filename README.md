@@ -6,7 +6,24 @@ Entry task for Endevel
 
 # Prerequirements
 
-## to run with pipenv
+# to run with docker - at your own risk, might not work
+
+requirements.txt in /endevel_entry/ directory with the following content:<br>
+`django==4.0`<br/>
+`psycopg2-binary==2.9.3`<br/>
+`django-cors-headers==3.8.0`<br/>
+`django-environ==0.8.1`<br/>
+`djangorestframework==3.13.1`<br/>
+`Pillow==9.0.1`<br/>
+
+To run the server: <br>
+`cd endevel_entry/`<br/>
+`docker build -t blogapi .`<br/>
+`pipenv run -d -p 8000:8000`<br/>
+
+<p>It returns ERR_EMPTY_RESPONSE for me, but it might be my docker :)</p>
+
+# to run with pipenv
 Install Pipenv package: <br>
 `pip install pipenv`<br/>
 
