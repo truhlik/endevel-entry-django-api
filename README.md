@@ -1,13 +1,10 @@
 # endevel-entry-django-api
- 
+
 API containing articles and tags 
- - with an option to show articles per tag
+ - with an option to list articles per tag at /articles/tagname
+ - with an option to list all articles and all tags
+ - add articles and tags in django admin at /admin
 Entry task for Endevel
-
-[How to run with Docker](#to run with Docker)
-[How to run with pipenv](#to run with pipenv)
-[How to run get Data](#Getting the data from the API)
-
 
 # to run with Docker
 
