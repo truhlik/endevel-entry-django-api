@@ -19,9 +19,8 @@ requirements.txt in /endevel_entry/ directory with the following content:<br>
 To run the server: <br>
 `cd endevel_entry/`<br/>
 `docker build -t blogapi .`<br/>
-`docker run -d -p 8000:8000`<br/>
+`docker run -d -p 8000:8000 blogapi`<br/>
 
-<p>It returns ERR_EMPTY_RESPONSE for me, but it might be my docker :)</p>
 
 # to run with pipenv
 Install Pipenv package: <br>
