@@ -4,11 +4,12 @@ API containing articles and tags
  - with an option to show articles per tag
 Entry task for Endevel
 
-# Prerequirements
 
 # to run with Docker
 
-requirements.txt in /endevel_entry/ directory with the following content:<br>
+1. Copy endevel_entry/settings.env.dist into endevel_entry/settings.env
+
+2. requirements.txt in /endevel_entry/ directory with the following content:<br>
 `django==4.0`<br/>
 `psycopg2-binary==2.9.3`<br/>
 `django-cors-headers==3.8.0`<br/>
@@ -16,7 +17,7 @@ requirements.txt in /endevel_entry/ directory with the following content:<br>
 `djangorestframework==3.13.1`<br/>
 `Pillow==9.0.1`<br/>
 
-To run the server: <br>
+3. To run the server: <br>
 `cd endevel_entry/`<br/>
 `docker build -t blogapi .`<br/>
 `docker run -d -p 8000:8000 blogapi`<br/>
