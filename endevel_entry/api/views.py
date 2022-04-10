@@ -17,7 +17,6 @@ class ArticleViewSet(viewsets.ModelViewSet):
     """
     queryset = Article.objects.all().order_by('-created_at')
     serializer_class = ArticleSerializer
-    permission_classes = [permissions.IsAuthenticated]
 
 
 class TagViewSet(viewsets.ModelViewSet):
@@ -26,12 +25,10 @@ class TagViewSet(viewsets.ModelViewSet):
     """
     queryset = Tag.objects.all()
     serializer_class = TagSerializer
-    permission_classes = [permissions.IsAuthenticated]
 
 
 class ArticleByTagList(generics.ListAPIView):
     serializer_class = ArticleSerializer
-    permission_classes = [permissions.IsAuthenticated]
 
     def get_queryset(self):
         """
